@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: blue;
+            margin: 0;
+            width: 100vw;
+            padding: 20px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.5s, color 0.5s;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        a:hover{
+            background: white;
+            color: blue;
+        }
+
+        .input{
+            display: block;
+            width: 500px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">Main</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <a href="/admin">Admin</a>
+    </header>
+
+    <form action="/login" method="POST">
+        <div class="input">
+            <label>Name: </label>
+            <input type='text' name='name'>
+        </div>
+        <div class="input">
+            <label>Password: </label>
+            <input type='password' name='password'>
+        </div>
+        <div class="input">
+            <button type='submit'>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
